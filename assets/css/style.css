@@ -1,0 +1,48 @@
+:root {
+    --title-font: 'Josefin Sans', sans-serif;
+    --text-font: 'Gudea', sans-serif;
+    --dark-blue: #043D5B;
+    --light-blue: #2795A9;
+    --dark-olive: #6E7922;
+    --light-olive: #9DB259;
+}
+
+* {
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--dark-blue);
+}
+
+header h1 {
+    display: inline-block;
+    background-color: var(--light-blue);
+    font-family: var(--title-font);
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: var(--light-blue);
+}
+
+#banner {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/butterflies-lizards.jpg);
+    background-size: contain;
+    background-position: center;
+}
