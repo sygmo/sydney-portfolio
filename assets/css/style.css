@@ -26,15 +26,13 @@ header h1 {
 
 #header-nav {
     float: right;
-    padding: 50px 0;
+    display: flex;
+    margin-top: 30px;
     margin-right: 50px;
 }
 
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a {
+#header-nav a {
+    padding: 5px;
     color: var(--light-blue);
 }
 
@@ -45,6 +43,10 @@ header nav ul li a {
     background-size: contain;
     background-position: center;
     position: relative;
+}
+
+p {
+    font-family: var(--text-font);
 }
 
 .subtitle {
@@ -58,6 +60,7 @@ header nav ul li a {
 
 .subtitle p {
     color: var(--light-blue);
+    font-family: var(--title-font);
 }
 
 .row {
@@ -78,10 +81,6 @@ h2 {
 .content {
     width: 80%;
     padding-left: 20px;
-}
-
-p {
-    font-family: var(--text-font);
 }
 
 #content-nav {
@@ -126,4 +125,43 @@ img {
     position: absolute;
     bottom: 20px;
     left: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        display: block;
+        text-align: center;
+        padding: 5px;
+        margin: 0;
+    }
+
+    #header-nav {
+        float: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .subtitle {
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    
+    .projects {
+        flex-direction: column;
+    }
+
+    .project-column {
+        width: 100%;
+    }
+    
+    #content-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content-nav a {
+        padding: 5px 0;
+    }
 }
