@@ -12,16 +12,21 @@
     font-family: var(--title-font);
 }
 
+a {
+    font-size: 1.5rem;
+}
+
 header {
     background-color: var(--dark-blue);
 }
 
 header h1 {
     display: inline-block;
-    padding: 5px 5px 5px 50px;
+    padding: 10px 10px 10px 50px;
     margin: 20px 0;
     background-color: var(--light-blue);
     font-family: var(--title-font);
+    font-size: 3rem;
 }
 
 #header-nav {
@@ -47,12 +52,14 @@ header h1 {
 
 p {
     font-family: var(--text-font);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .subtitle {
     background-color: var(--dark-blue);
     display: inline-block;
-    padding: 5px;
+    padding: 15px;
     position: absolute;
     bottom: 20px;
     right: 50px;
@@ -61,6 +68,8 @@ p {
 .subtitle p {
     color: var(--light-blue);
     font-family: var(--title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
 }
 
 .row {
@@ -75,6 +84,7 @@ p {
 }
 
 h2 {
+    font-size: 2.5rem;
     padding: 10px;
 }
 
@@ -124,6 +134,10 @@ img:hover {
     filter: none;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
 .label {
     background-color: var(--light-blue);
     display: inline-block;
@@ -150,8 +164,23 @@ img:hover {
     }
 
     .subtitle {
-        right: 50%;
-        transform: translate(50%, 0);
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .section-header {
+        border-right: none;
+        border-bottom: 5px solid var(--dark-blue);
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px 0;
     }
     
     .projects {
