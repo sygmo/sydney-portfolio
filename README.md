@@ -13,4 +13,4 @@ Technologies: HTML, CSS
 
 This project is a personal portfolio website made completely from scratch for a UT Coding Bootcamp assignment. I intend to make real use of it in the future, so it is very much a work in progress. 
 
-All links work (except for Resume, which will be added at a later time), and the layout is responsive and will appear differently on mobile. 
+All links work, including the link to my resume, and the layout is responsive and will appear differently on mobile. 
